@@ -1,18 +1,41 @@
 'use strict';
 
 var React = require('react-native');
-var styles = React.StyleSheet.create({
+var {
+  StyleSheet,
+  Text,
+  NavigatorIOS,
+  Component
+} = React;
+
+var styles = StyleSheet.create({
   text: {
     color: 'black',
     backgroundColor: 'white',
     fontSize: 30,
     margin: 80
+  },
+  container: {
+    flex: 1
   }
 });
 
-class PropertyFinderApp extends React.Component {
+class HelloWorld extends Component {
   render() {
-    return React.createElement(React.Text, {style: styles.text}, "Hello World");
+    return <Text style={styles.text}> Hello World (Again)</Text>
+  }
+}
+
+class PropertyFinderApp extends Component {
+  render() {
+    return (
+      <NavigatorIOS
+        style={styles.container}
+        initialRoute={{
+          title: 'PropertyFinder',
+          component: HelloWorld
+        }}/>
+    );
   }
 }
 
