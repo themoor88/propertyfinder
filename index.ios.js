@@ -2,12 +2,14 @@
 
 var React = require('react-native');
 var SearchPage = require('./SearchPage');
+
 var {
   StyleSheet,
   Text,
   NavigatorIOS,
   Component
 } = React;
+
 var styles = StyleSheet.create({
   text: {
     color: 'black',

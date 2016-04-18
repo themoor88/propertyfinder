@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require('react-native');
+
 var {
   StyleSheet,
   Text,
@@ -11,6 +12,7 @@ var {
   Image,
   Component
 } = React;
+
 var styles = StyleSheet.create({
   description: {
     marginBottom: 20,
