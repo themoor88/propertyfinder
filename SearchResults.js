@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react-native');
+import React from 'react-native';
 
-var {
+const {
   StyleSheet,
   Image,
   View,
@@ -45,4 +45,4 @@ class SearchResults extends Component {
   }
 }
 
-module.exports = SearchResults;
+export default SearchResults;

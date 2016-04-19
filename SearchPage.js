@@ -1,9 +1,9 @@
 'use strict';
 
-var React = require('react-native');
-var SearchResults = require('./SearchResults');
+import React from 'react-native';
+import SearchResults from './SearchResults';
 
-var {
+const {
   StyleSheet,
   Text,
   TextInput,
@@ -14,7 +14,7 @@ var {
   Component
 } = React;
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   description: {
     marginBottom: 20,
     fontSize: 18,
@@ -166,4 +166,4 @@ class SearchPage extends Component {
   }
 }
 
-module.exports = SearchPage;
+export default SearchPage;
