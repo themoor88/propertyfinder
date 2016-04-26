@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react-native';
-import SearchResults from './SearchResults';
+import SearchResults from './components/SearchResults';
 
 const {
   StyleSheet,

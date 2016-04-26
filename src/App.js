@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react-native');
-var SearchPage = require('./SearchPage');
+var SearchPage = require('./components/SearchPage');
 
 var {
   StyleSheet,
